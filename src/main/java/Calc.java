@@ -13,7 +13,6 @@ import java.util.Map;
 
 class EvalVisitor extends LibExprBaseVisitor<Integer> {
     Map<String, Integer> memory = new HashMap<String, Integer>();
-
     @Override
     public Integer visitPrintExpr(LibExprParser.PrintExprContext ctx) {
         int value = visit(ctx.expr()); // 遍历表达式

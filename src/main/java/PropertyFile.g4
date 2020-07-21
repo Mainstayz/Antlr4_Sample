@@ -1,12 +1,9 @@
 grammar PropertyFile;
-@member {
-    void startFile(){}
-    void finishFile(){}
-    void defineProperty(Token name,Token value){}
-}
-file: {startFile();} prop+ {finishFile();};
+// 这种写法不好，与java绑定了
+// 自定义语法解析器
+file: prop+;
 
-prop: ID '=' STRING '\n' {defineProperty($ID,%STROMH);};
+prop: ID '=' STRING '\n';
 
 
 ID : [a-zA-Z]+;

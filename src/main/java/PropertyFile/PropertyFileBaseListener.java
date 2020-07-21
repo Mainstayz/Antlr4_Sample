@@ -1,4 +1,4 @@
-// Generated from /Users/hezongzhu/Antlr4_Sample/src/main/java/PropertyFile.g4 by ANTLR 4.8
+// Generated from /Users/pillar/Desktop/Antlr4_Sample/src/main/java/PropertyFile.g4 by ANTLR 4.8
 package PropertyFile;
 
 import org.antlr.v4.runtime.ParserRuleContext;
